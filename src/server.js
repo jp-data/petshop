@@ -16,7 +16,7 @@ server.set('view engine', 'mustache')
 server.set('views', path.join(__dirname,'views'))
 server.engine('mustache',mustache())
 
-server.use(express.static(path.join(__dirname,'..public')))
+server.use(express.static(path.join(__dirname,'../public')))
 //usando a rota importada
 server.use(mainRoutes)
 //escutando a porta que criamos em .env
