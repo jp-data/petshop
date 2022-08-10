@@ -21,4 +21,8 @@ server.use(express.static(path.join(__dirname,'../public')))
 server.use(mainRoutes)
 //escutando a porta que criamos em .env
 server.listen(process.env.PORT)
+//404
+server.search((req,res) =>{
+    res.render('pages/404')
+})
 
